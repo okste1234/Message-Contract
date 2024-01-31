@@ -28,11 +28,20 @@
 	padding: 8px;
 	color: #282c34;
 	background-color: azure;
+	border-radius: 10%;
+	font-style: oblique;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.space {
+	margin-bottom: 10px;
 }
 
 .input {
-	width: 400px;
+	width: 423px;
 	padding: 10px;
-	margin-bottom: 4px;
-	border-radius: 20%;
+	margin-bottom: 16px;
+	font-size: 16px;
+	font-weight: bold;
 }

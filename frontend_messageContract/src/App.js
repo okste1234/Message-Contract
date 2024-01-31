@@ -7,7 +7,7 @@ import { contractAddress } from './contracts';
 
 function App() {
   const [msg, setMsg] = useState("");
-  const [retrieveMsg, setretrieveMsg] = useState("display")
+  const [retrieveMsg, setretrieveMsg] = useState("...message")
 
   const handleInput = (e) => {
     setMsg(e.target.value);
@@ -59,14 +59,15 @@ function App() {
     <div className="App">
       <header className="App-header">
 
-
-        <input
-          placeholder="write on message on chain"
-          value={msg}
-          onChange={handleInput}
-          type='text'
-          className='input'
-        />
+        <div className='space'>
+          <input
+            placeholder="write your message on chain"
+            value={msg}
+            onChange={handleInput}
+            type='text'
+            className='input'
+          />
+        </div>
 
         <button onClick={setMessage}
           className='btn'
@@ -82,11 +83,11 @@ function App() {
           Get Message
         </button>
 
-        <h1
+        <h4
           className="App-link"
         >
-          My Message : {retrieveMsg}
-        </h1>
+          My Message : &nbsp; {retrieveMsg}
+        </h4>
       </header>
     </div>
   );
